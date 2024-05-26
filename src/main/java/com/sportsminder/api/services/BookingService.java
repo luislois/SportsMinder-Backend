@@ -74,7 +74,7 @@ public class BookingService {
     }
     
     // Update the status of the reserve booking to expired in current day and before current hour, execute every minute
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(cron = "0 0 * * * *")
     public void updateStatusExpiredBookingsLastHour() {
     	LocalDate today = LocalDate.now();
     	LocalTime currentHour = LocalTime.now();
