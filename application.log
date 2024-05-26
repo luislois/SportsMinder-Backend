@@ -1,0 +1,98 @@
+2024-05-22T02:14:10.179+02:00  INFO 14064 --- [API] [RMI TCP Connection(161)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-22T02:14:10.321+02:00  INFO 14064 --- [API] [RMI TCP Connection(161)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T02:14:10.349+02:00  INFO 14064 --- [API] [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-22T02:14:10.364+02:00  INFO 14064 --- [API] [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-22T02:18:39.016+02:00  INFO 11504 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.7 with PID 11504 (C:\Users\siulk\eclipse-workspace\API\target\classes started by siulk in C:\Users\siulk\eclipse-workspace\API)
+2024-05-22T02:18:39.018+02:00  INFO 11504 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-22T02:18:39.091+02:00  INFO 11504 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-22T02:18:39.091+02:00  INFO 11504 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-22T02:18:39.899+02:00  INFO 11504 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-22T02:18:39.974+02:00  INFO 11504 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-05-22T02:18:40.882+02:00  INFO 11504 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-22T02:18:40.917+02:00  INFO 11504 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-22T02:18:40.918+02:00  INFO 11504 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-22T02:18:41.114+02:00  INFO 11504 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-22T02:18:41.115+02:00  INFO 11504 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2023 ms
+2024-05-22T02:18:41.318+02:00  INFO 11504 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-22T02:18:41.415+02:00  INFO 11504 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-22T02:18:41.463+02:00  INFO 11504 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-22T02:18:41.786+02:00  INFO 11504 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-22T02:18:41.825+02:00  INFO 11504 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-22T02:18:42.409+02:00  INFO 11504 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@391347be
+2024-05-22T02:18:42.411+02:00  INFO 11504 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-22T02:18:45.364+02:00  INFO 11504 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-22T02:18:45.532+02:00  INFO 11504 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T02:18:46.471+02:00  INFO 11504 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-22T02:18:48.183+02:00  INFO 11504 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-22T02:18:48.253+02:00  INFO 11504 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-22T02:18:48.271+02:00  INFO 11504 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 9.805 seconds (process running for 10.695)
+2024-05-22T02:19:03.457+02:00  INFO 11504 --- [API] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-22T02:19:03.459+02:00  INFO 11504 --- [API] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-22T02:19:03.464+02:00  INFO 11504 --- [API] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-05-22T02:25:32.415+02:00  INFO 11504 --- [API] [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-22T02:25:32.443+02:00  INFO 11504 --- [API] [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T02:25:32.447+02:00  INFO 11504 --- [API] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-22T02:25:32.454+02:00  INFO 11504 --- [API] [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-22T09:26:51.685+02:00  INFO 5784 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.7 with PID 5784 (C:\Users\siulk\eclipse-workspace\API\target\classes started by siulk in C:\Users\siulk\eclipse-workspace\API)
+2024-05-22T09:26:51.687+02:00  INFO 5784 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-22T09:26:51.788+02:00  INFO 5784 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-22T09:26:51.788+02:00  INFO 5784 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-22T09:26:53.042+02:00  INFO 5784 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-22T09:26:53.155+02:00  INFO 5784 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2024-05-22T09:26:55.076+02:00  INFO 5784 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-22T09:26:55.158+02:00  INFO 5784 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-22T09:26:55.159+02:00  INFO 5784 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-22T09:26:55.287+02:00  INFO 5784 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-22T09:26:55.287+02:00  INFO 5784 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3497 ms
+2024-05-22T09:27:01.193+02:00  INFO 5784 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-22T09:27:01.343+02:00  INFO 5784 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-22T09:27:01.423+02:00  INFO 5784 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-22T09:27:02.086+02:00  INFO 5784 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-22T09:27:02.221+02:00  INFO 5784 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-22T09:27:02.957+02:00  INFO 5784 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f16853b
+2024-05-22T09:27:02.960+02:00  INFO 5784 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-22T09:27:04.562+02:00  INFO 5784 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-22T09:27:04.649+02:00  INFO 5784 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T09:27:05.206+02:00  INFO 5784 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-22T09:27:06.719+02:00  INFO 5784 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-22T09:27:06.796+02:00  INFO 5784 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-22T09:27:06.812+02:00  INFO 5784 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 15.7 seconds (process running for 16.871)
+2024-05-22T09:27:20.360+02:00  INFO 5784 --- [API] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-22T09:27:20.360+02:00  INFO 5784 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-22T09:27:20.361+02:00  INFO 5784 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-22T17:51:04.156+02:00  WARN 5784 --- [API] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h22m30s119ms369µs300ns).
+2024-05-22T21:29:37.668+02:00  INFO 5784 --- [API] [RMI TCP Connection(284)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-22T21:29:37.695+02:00  INFO 5784 --- [API] [RMI TCP Connection(284)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T21:29:37.700+02:00  INFO 5784 --- [API] [RMI TCP Connection(284)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-22T21:29:37.707+02:00  INFO 5784 --- [API] [RMI TCP Connection(284)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-22T21:30:42.204+02:00  INFO 5028 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.7 with PID 5028 (C:\Users\siulk\eclipse-workspace\API\target\classes started by siulk in C:\Users\siulk\eclipse-workspace\API)
+2024-05-22T21:30:42.207+02:00  INFO 5028 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-05-22T21:30:42.286+02:00  INFO 5028 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-22T21:30:42.287+02:00  INFO 5028 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-22T21:30:43.015+02:00  INFO 5028 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-22T21:30:43.087+02:00  INFO 5028 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-05-22T21:30:43.771+02:00  INFO 5028 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-22T21:30:43.788+02:00  INFO 5028 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-22T21:30:43.788+02:00  INFO 5028 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-22T21:30:43.894+02:00  INFO 5028 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-22T21:30:43.895+02:00  INFO 5028 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1607 ms
+2024-05-22T21:30:44.087+02:00  INFO 5028 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-22T21:30:44.168+02:00  INFO 5028 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-22T21:30:44.221+02:00  INFO 5028 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-22T21:30:44.497+02:00  INFO 5028 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-22T21:30:44.537+02:00  INFO 5028 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-22T21:30:44.862+02:00  INFO 5028 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20246111
+2024-05-22T21:30:44.867+02:00  INFO 5028 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-22T21:30:46.404+02:00  INFO 5028 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-22T21:30:46.500+02:00  INFO 5028 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T21:30:47.019+02:00  INFO 5028 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-22T21:30:47.998+02:00  INFO 5028 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-22T21:30:48.055+02:00  INFO 5028 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-22T21:30:48.070+02:00  INFO 5028 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 6.468 seconds (process running for 7.628)
+2024-05-22T21:31:20.014+02:00  INFO 5028 --- [API] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-22T21:31:20.014+02:00  INFO 5028 --- [API] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-22T21:31:20.024+02:00  INFO 5028 --- [API] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-22T21:33:57.642+02:00  INFO 5028 --- [API] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-22T21:33:57.679+02:00  INFO 5028 --- [API] [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T21:33:57.683+02:00  INFO 5028 --- [API] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-22T21:33:57.695+02:00  INFO 5028 --- [API] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
