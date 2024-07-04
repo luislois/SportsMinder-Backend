@@ -21,31 +21,30 @@ import lombok.ToString;
 @EqualsAndHashCode
 @NoArgsConstructor
 @Table(name="Bookings")
+@Getter @Setter
 public class Booking {
 
 	@Id
     @Column(name="booking_id")
-    @Getter @Setter
     private String bookingId;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "track_id", referencedColumnName = "track_id")
-    @Getter @Setter
     private Track track;
+
     @Column(name="user_id", nullable = false)
-    @Getter @Setter
     private String idUser;
+
     @Column(name= "booking_status",nullable =false)
-    @Getter @Setter
     private String status = "reserved";
+
     @Column(name="booking_date")
-    @Getter @Setter
     private LocalDate date;
+
     @Column(name="booking_start_time")
-    @Getter @Setter
     private LocalTime startHour;
+
     @Column(name="booking_end_time")
-    @Getter @Setter
     private LocalTime endHour;
     
     public Booking(String bookingId, Track track, String idUser, LocalDate date, LocalTime startHour, LocalTime endHour, String status) {
