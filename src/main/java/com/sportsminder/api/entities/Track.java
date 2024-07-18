@@ -29,28 +29,27 @@ public class Track {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="track_id")
-
     private Long id;
+
     @Column(name="track_name")
-
     private String name;
-    @Column(name="track_sport")
 
+    @Column(name="track_sport")
     private String sport;
 
     @Column(name="track_type")
     private String type;
 
     @Column(name="track_start_time")
-    private LocalTime startHour;
+    private String startHour;
 
     @Column(name="track_end_time")
-    private LocalTime endHour;
+    private String endHour;
 
     @OneToMany(mappedBy = "track", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Booking> bookings;
 
-    public Track(String name, String sport, String type, LocalTime startHour, LocalTime endHour) {
+    public Track(String name, String sport, String type, String startHour, String endHour) {
         this.name = name;
         this.sport = sport;
         this.type = type;
