@@ -3,6 +3,8 @@ package com.sportsminder.api.entities;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -28,8 +30,9 @@ public class Booking {
     @Column(name="booking_id")
     private String bookingId;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "track_id", referencedColumnName = "track_id")
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Track track;
 
     @Column(name="user_id", nullable = false)

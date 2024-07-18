@@ -1,7 +1,8 @@
 package com.sportsminder.api.entities;
 
-import java.time.LocalTime;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -22,31 +23,33 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @NoArgsConstructor
-@Table(name="Tracks")
-@Getter @Setter
+@Table(name = "Tracks")
+@Getter
+@Setter
 public class Track {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="track_id")
+    @Column(name = "track_id")
     private Long id;
 
-    @Column(name="track_name")
+    @Column(name = "track_name")
     private String name;
 
-    @Column(name="track_sport")
+    @Column(name = "track_sport")
     private String sport;
 
-    @Column(name="track_type")
+    @Column(name = "track_type")
     private String type;
 
-    @Column(name="track_start_time")
+    @Column(name = "track_start_time")
     private String startHour;
 
-    @Column(name="track_end_time")
+    @Column(name = "track_end_time")
     private String endHour;
 
-    @OneToMany(mappedBy = "track", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonIgnore
+    @OneToMany(mappedBy = "track", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
     public Track(String name, String sport, String type, String startHour, String endHour) {

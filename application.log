@@ -117,3 +117,241 @@
 2024-07-18T16:42:54.309+02:00  WARN 3510 --- [API] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
 2024-07-18T16:42:54.313+02:00  WARN 3510 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
 2024-07-18T16:42:54.314+02:00  WARN 3510 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
+2024-07-18T17:02:09.506+02:00  WARN 3510 --- [API] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
+2024-07-18T17:02:09.509+02:00  WARN 3510 --- [API] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
+2024-07-18T17:07:17.554+02:00  INFO 3510 --- [API] [http-nio-8080-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x8c0x010x000x020x880x030x030x99q0x03n0xbb0xc80x1a0xc50xa30x1c0xba$0xf0oY0xbb0x9b0x05Vm0xc10xd40xde&0xaa0x0a0x870x940xd80xf40xb70x14 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-18T17:07:17.552+02:00  INFO 3510 --- [API] [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x8c0x010x000x020x880x030x03?0x194]0xd70x8d0xad(0xe9:0\d0xa40x1d0xf6l0x010xc40x170x120xb8$w#0xb60xa3g0x0bb*0x02 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-18T17:07:59.546+02:00  WARN 3510 --- [API] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
+2024-07-18T17:07:59.546+02:00  WARN 3510 --- [API] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
+2024-07-18T17:14:55.961+02:00  WARN 3510 --- [API] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
+2024-07-18T17:14:55.962+02:00  WARN 3510 --- [API] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
+2024-07-18T17:24:18.010+02:00  WARN 3510 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)
+2024-07-18T17:24:18.010+02:00  WARN 3510 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Infinite recursion (StackOverflowError)]
+2024-07-18T17:24:22.633+02:00  INFO 3510 --- [API] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:24:22.637+02:00  INFO 3510 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T17:24:22.655+02:00  INFO 3510 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T17:24:55.681+02:00  INFO 26247 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 26247 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:24:55.684+02:00  INFO 26247 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:24:55.743+02:00  INFO 26247 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18T17:24:55.744+02:00  INFO 26247 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18T17:24:56.294+02:00  INFO 26247 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:24:56.353+02:00  INFO 26247 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:24:56.851+02:00  INFO 26247 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:24:56.862+02:00  INFO 26247 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:24:56.864+02:00  INFO 26247 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:24:56.911+02:00  INFO 26247 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:24:56.912+02:00  INFO 26247 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2024-07-18T17:24:57.051+02:00  INFO 26247 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:24:57.097+02:00  INFO 26247 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-18T17:24:57.129+02:00  INFO 26247 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:24:57.309+02:00  INFO 26247 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:24:57.332+02:00  INFO 26247 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T17:24:57.582+02:00  INFO 26247 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7091edbd
+2024-07-18T17:24:57.585+02:00  INFO 26247 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T17:24:58.387+02:00  INFO 26247 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:24:58.451+02:00  INFO 26247 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:24:58.731+02:00  INFO 26247 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-18T17:24:59.424+02:00  INFO 26247 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:24:59.456+02:00  INFO 26247 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:24:59.471+02:00  INFO 26247 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 4.167 seconds (process running for 4.584)
+2024-07-18T17:25:06.239+02:00  INFO 26247 --- [API] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18T17:25:06.239+02:00  INFO 26247 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-18T17:25:06.243+02:00  INFO 26247 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-18T17:25:06.414+02:00  WARN 26247 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.sportsminder.api.entities.Track.bookings: could not initialize proxy - no Session]
+2024-07-18T17:25:11.225+02:00  WARN 26247 --- [API] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.sportsminder.api.entities.Track.bookings: could not initialize proxy - no Session]
+2024-07-18T17:27:12.971+02:00  INFO 26247 --- [API] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:27:12.976+02:00  INFO 26247 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T17:27:12.988+02:00  INFO 26247 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T17:27:24.280+02:00  INFO 27570 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 27570 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:27:24.283+02:00  INFO 27570 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:27:24.338+02:00  INFO 27570 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18T17:27:24.338+02:00  INFO 27570 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18T17:27:24.906+02:00  INFO 27570 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:27:24.966+02:00  INFO 27570 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:27:25.469+02:00  INFO 27570 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:27:25.481+02:00  INFO 27570 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:27:25.482+02:00  INFO 27570 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:27:25.533+02:00  INFO 27570 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:27:25.533+02:00  INFO 27570 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2024-07-18T17:27:25.682+02:00  INFO 27570 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:27:25.726+02:00  INFO 27570 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-18T17:27:25.757+02:00  INFO 27570 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:27:25.932+02:00  INFO 27570 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:27:25.962+02:00  INFO 27570 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T17:27:26.219+02:00  INFO 27570 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ddb0bac
+2024-07-18T17:27:26.220+02:00  INFO 27570 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T17:27:27.040+02:00  INFO 27570 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:27:27.102+02:00  INFO 27570 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:27:27.402+02:00  INFO 27570 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-18T17:27:28.116+02:00  INFO 27570 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:27:28.150+02:00  INFO 27570 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:27:28.164+02:00  INFO 27570 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 4.283 seconds (process running for 4.63)
+2024-07-18T17:28:14.660+02:00  INFO 27570 --- [API] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18T17:28:14.661+02:00  INFO 27570 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-18T17:28:14.662+02:00  INFO 27570 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-18T17:28:14.802+02:00  WARN 27570 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: failed to lazily initialize a collection of role: com.sportsminder.api.entities.Track.bookings: could not initialize proxy - no Session]
+2024-07-18T17:28:31.697+02:00  INFO 27570 --- [API] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:28:31.710+02:00  INFO 27570 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T17:28:31.725+02:00  INFO 27570 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T17:33:59.421+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 31296 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:33:59.423+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:33:59.474+02:00  INFO 31296 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-18T17:33:59.475+02:00  INFO 31296 --- [API] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-18T17:34:00.031+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:34:00.083+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:34:00.593+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:34:00.605+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:34:00.607+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:34:00.653+02:00  INFO 31296 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:34:00.654+02:00  INFO 31296 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1178 ms
+2024-07-18T17:34:00.803+02:00  INFO 31296 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:34:00.847+02:00  INFO 31296 --- [API] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-18T17:34:00.877+02:00  INFO 31296 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:34:01.047+02:00  INFO 31296 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:34:01.073+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-18T17:34:01.348+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@724201b7
+2024-07-18T17:34:01.350+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-18T17:34:02.162+02:00  INFO 31296 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:34:02.224+02:00  INFO 31296 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:34:02.521+02:00  INFO 31296 --- [API] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-18T17:34:03.209+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:34:03.249+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:34:03.262+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 4.204 seconds (process running for 4.522)
+2024-07-18T17:34:09.839+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18T17:34:09.840+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-18T17:34:09.841+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-18T17:35:03.680+02:00  INFO 31296 --- [API] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-18T17:35:03.687+02:00  INFO 31296 --- [API] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:03.691+02:00  INFO 31296 --- [API] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-18T17:35:03.714+02:00  INFO 31296 --- [API] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-18T17:35:03.815+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 31296 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:35:03.816+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:35:04.006+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:35:04.013+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:35:04.138+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:35:04.139+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:35:04.140+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:35:04.150+02:00  INFO 31296 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:35:04.150+02:00  INFO 31296 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 332 ms
+2024-07-18T17:35:04.197+02:00  INFO 31296 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:35:04.200+02:00  INFO 31296 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:35:04.204+02:00  INFO 31296 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:35:04.205+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-07-18T17:35:04.246+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2e04f446
+2024-07-18T17:35:04.246+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-07-18T17:35:04.321+02:00  INFO 31296 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:35:04.353+02:00  INFO 31296 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:04.630+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:35:04.642+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:35:04.651+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 0.868 seconds (process running for 65.911)
+2024-07-18T17:35:04.654+02:00  INFO 31296 --- [API] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-18T17:35:16.046+02:00  INFO 31296 --- [API] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-18T17:35:16.050+02:00  INFO 31296 --- [API] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:16.051+02:00  INFO 31296 --- [API] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-07-18T17:35:16.073+02:00  INFO 31296 --- [API] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-07-18T17:35:16.207+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 31296 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:35:16.208+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:35:16.388+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:35:16.401+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:35:16.497+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:35:16.498+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:35:16.498+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:35:16.509+02:00  INFO 31296 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:35:16.510+02:00  INFO 31296 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 301 ms
+2024-07-18T17:35:16.567+02:00  INFO 31296 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:35:16.569+02:00  INFO 31296 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:35:16.573+02:00  INFO 31296 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:35:16.574+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-07-18T17:35:16.610+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@31bff884
+2024-07-18T17:35:16.610+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-07-18T17:35:16.676+02:00  INFO 31296 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:35:16.703+02:00  INFO 31296 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:17.010+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:35:17.020+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:35:17.035+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 0.865 seconds (process running for 78.295)
+2024-07-18T17:35:17.036+02:00  INFO 31296 --- [API] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-18T17:35:22.425+02:00  INFO 31296 --- [API] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-18T17:35:22.442+02:00  INFO 31296 --- [API] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:22.444+02:00  INFO 31296 --- [API] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-07-18T17:35:22.500+02:00  INFO 31296 --- [API] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-07-18T17:35:22.592+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 31296 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:35:22.592+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:35:22.720+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:35:22.728+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:35:22.839+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:35:22.840+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:35:22.840+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:35:22.848+02:00  INFO 31296 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:35:22.848+02:00  INFO 31296 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 255 ms
+2024-07-18T17:35:22.892+02:00  INFO 31296 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:35:22.894+02:00  INFO 31296 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:35:22.897+02:00  INFO 31296 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:35:22.898+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-07-18T17:35:22.933+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6ab25d0d
+2024-07-18T17:35:22.934+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-07-18T17:35:22.993+02:00  INFO 31296 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:35:23.022+02:00  INFO 31296 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:23.278+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:35:23.290+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:35:23.300+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 0.732 seconds (process running for 84.56)
+2024-07-18T17:35:23.301+02:00  INFO 31296 --- [API] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-18T17:35:24.678+02:00  INFO 31296 --- [API] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-18T17:35:24.681+02:00  INFO 31296 --- [API] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:24.682+02:00  INFO 31296 --- [API] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-07-18T17:35:24.692+02:00  INFO 31296 --- [API] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-07-18T17:35:24.793+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Starting ApiApplication using Java 17.0.11 with PID 31296 (/home/siulk/code/SportsMinder-Backend/target/classes started by siulk in /home/siulk/code/SportsMinder-Backend)
+2024-07-18T17:35:24.794+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-18T17:35:24.954+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-18T17:35:24.966+02:00  INFO 31296 --- [API] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-07-18T17:35:25.110+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-18T17:35:25.111+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-18T17:35:25.111+02:00  INFO 31296 --- [API] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-07-18T17:35:25.123+02:00  INFO 31296 --- [API] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-18T17:35:25.124+02:00  INFO 31296 --- [API] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2024-07-18T17:35:25.162+02:00  INFO 31296 --- [API] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-18T17:35:25.163+02:00  INFO 31296 --- [API] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-18T17:35:25.167+02:00  INFO 31296 --- [API] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-18T17:35:25.167+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-07-18T17:35:25.198+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@7f1feab5
+2024-07-18T17:35:25.198+02:00  INFO 31296 --- [API] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-07-18T17:35:25.269+02:00  INFO 31296 --- [API] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-18T17:35:25.296+02:00  INFO 31296 --- [API] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:35:25.540+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-18T17:35:25.549+02:00  INFO 31296 --- [API] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-07-18T17:35:25.559+02:00  INFO 31296 --- [API] [restartedMain] com.sportsminder.api.ApiApplication      : Started ApiApplication in 0.799 seconds (process running for 86.819)
+2024-07-18T17:35:25.560+02:00  INFO 31296 --- [API] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-18T17:37:01.115+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-18T17:37:01.115+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-18T17:37:01.116+02:00  INFO 31296 --- [API] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-18T17:37:01.158+02:00  WARN 31296 --- [API] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: could not initialize proxy [com.sportsminder.api.entities.Track#17] - no Session]
+2024-07-18T17:37:59.254+02:00  INFO 31296 --- [API] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-18T17:37:59.255+02:00  INFO 31296 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-07-18T17:37:59.282+02:00  INFO 31296 --- [API] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.

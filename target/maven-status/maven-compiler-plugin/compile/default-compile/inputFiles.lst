@@ -4,8 +4,6 @@
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/entities/Track.java
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/ApiApplication.java
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/controllers/TrackController.java
-/home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/dtos/BookingDTO.java
-/home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/dtos/TrackDTO.java
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/entities/Booking.java
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/services/BookingService.java
 /home/siulk/code/SportsMinder-Backend/src/main/java/com/sportsminder/api/controllers/BookingController.java
