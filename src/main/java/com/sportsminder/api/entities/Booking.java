@@ -22,35 +22,36 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 @NoArgsConstructor
-@Table(name="Bookings")
-@Getter @Setter
+@Table(name = "Bookings")
+@Getter
+@Setter
 public class Booking {
 
-	@Id
-    @Column(name="booking_id")
+    @Id
+    @Column(name = "booking_id")
     private String bookingId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "track_id", referencedColumnName = "track_id")
-    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Track track;
 
-    @Column(name="user_id", nullable = false)
+    @Column(name = "user_id", nullable = false)
     private String idUser;
 
-    @Column(name= "booking_status",nullable =false)
+    @Column(name = "booking_status", nullable = false)
     private String status = "reserved";
 
-    @Column(name="booking_date")
+    @Column(name = "booking_date")
     private LocalDate date;
 
-    @Column(name="booking_start_time")
+    @Column(name = "booking_start_time")
     private LocalTime startHour;
 
-    @Column(name="booking_end_time")
+    @Column(name = "booking_end_time")
     private LocalTime endHour;
-    
-    public Booking(String bookingId, Track track, String idUser, LocalDate date, LocalTime startHour, LocalTime endHour, String status) {
+
+    public Booking(String bookingId, Track track, String idUser, LocalDate date, LocalTime startHour, LocalTime endHour,
+            String status) {
         this.bookingId = bookingId;
         this.track = track;
         this.idUser = idUser;

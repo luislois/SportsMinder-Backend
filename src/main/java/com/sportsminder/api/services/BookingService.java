@@ -12,9 +12,11 @@ import com.sportsminder.api.entities.Track;
 import com.sportsminder.api.repositories.BookingRepository;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class BookingService {
@@ -29,11 +31,11 @@ public class BookingService {
     public Booking getBookingById(String bookingId) {
         return bookingRepository.findById(bookingId).orElse(null);
     }
-    
+
     public List<Booking> getBookingsByidUser(String idUser) {
         return bookingRepository.findByidUser(idUser);
     }
-    
+
     public List<Booking> getBookingsByTrack(Track track) {
         return bookingRepository.findByTrack(track);
     }
@@ -41,54 +43,48 @@ public class BookingService {
     public Booking saveBooking(Booking booking) {
         return bookingRepository.save(booking);
     }
+
     @Transactional
     public void deleteBooking(String bookingId) {
         bookingRepository.deleteById(bookingId);
     }
-    
+
     public List<Booking> getBookingsByTrackIdAndDate(Long idTrack, LocalDate date) {
         return bookingRepository.findByTrackIdAndDate(idTrack, date);
     }
-    
+
     // Update the status of the reserve booking to expired , execute on start
     @PostConstruct
     public void updateStatusExpiredBookings() {
-    	LocalDate currentDate = LocalDate.now();
-        LocalTime currentDateTime = LocalTime.now();
-        
+        LocalDateTime currentDateTime = LocalDateTime.now();
+
         List<Booking> bookings = bookingRepository.findAll();
-        List<Booking> bookingsToUpdate = new ArrayList<>();
-        
-        for (Booking booking : bookings) {
-            LocalDate bookingDate = booking.getDate();
-            LocalTime bookingStartHour = booking.getStartHour();
-            if (bookingDate.isBefore(currentDate) || bookingDate.isEqual(currentDate) && bookingStartHour.isBefore(currentDateTime)) {
-                if ("reserved".equals(booking.getStatus())) {
-                    booking.setStatus("expired");
-                    bookingsToUpdate.add(booking);
-                }
-            }
-        }
-        
+        List<Booking> bookingsToUpdate = bookings.stream()
+                .filter(booking -> booking.getStatus().equals("reserved") &&
+                        (booking.getDate().isBefore(currentDateTime.toLocalDate()) ||
+                                (booking.getDate().isEqual(currentDateTime.toLocalDate()) &&
+                                        booking.getStartHour().isBefore(currentDateTime.toLocalTime()))))
+                .peek(booking -> booking.setStatus("expired"))
+                .collect(Collectors.toList());
+
         bookingRepository.saveAll(bookingsToUpdate);
     }
-    
-    // Update the status of the reserve booking to expired in current day and before current hour, execute every minute
+
+    // Update the status of the reserve booking to expired in current day and before
+    // current hour, execute every minute
     @Scheduled(cron = "0 0 * * * *")
     public void updateStatusExpiredBookingsLastHour() {
-    	LocalDate today = LocalDate.now();
-    	LocalTime currentHour = LocalTime.now();
-    	
-    	List<Booking> bookings = bookingRepository.findByDate(today);
-    	
-        for (Booking booking : bookings) {
-        	String bookingStatus = booking.getStatus();
-        	LocalTime bookingStartHour = booking.getStartHour();
-        	if (bookingStartHour.isBefore(currentHour) && bookingStatus.equals("reserved")) {
-                booking.setStatus("expired");
-                bookingRepository.save(booking);
-            }
-        }
-    	 
+        LocalDate today = LocalDate.now();
+        LocalTime currentHour = LocalTime.now();
+
+        List<Booking> bookings = bookingRepository.findByDate(today);
+        List<Booking> bookingsToUpdate = bookings.stream()
+                .filter(booking -> booking.getStatus().equals("reserved") &&
+                        booking.getStartHour().isBefore(currentHour))
+                .peek(booking -> booking.setStatus("expired"))
+                .collect(Collectors.toList());
+
+        bookingRepository.saveAll(bookingsToUpdate);
+
     }
 }

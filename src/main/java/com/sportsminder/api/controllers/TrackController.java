@@ -1,4 +1,5 @@
 package com.sportsminder.api.controllers;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,14 +21,14 @@ public class TrackController {
     @GetMapping
     public ResponseEntity<List<Track>> getAllTracks() {
         List<Track> tracks = trackService.getAllTracks();
-        return new ResponseEntity<>(tracks, tracks.isEmpty() ? HttpStatus.OK : HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(tracks, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Track> getTrackById(@PathVariable Long id) {
         Track track = trackService.getTrackById(id);
         if (track == null) {
-        	return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(track, HttpStatus.OK);
     }
@@ -43,7 +44,7 @@ public class TrackController {
         trackService.deleteTrack(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-    
+
     @PutMapping("/{id}")
     public ResponseEntity<Track> updateTrack(@PathVariable Long id, @RequestBody Track updatedTrack) {
         Track updatedTrackResult = trackService.updateTrack(id, updatedTrack);
