@@ -2,6 +2,7 @@ package com.sportsminder.api.entities;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -51,7 +52,7 @@ public class Booking {
     private LocalTime endHour;
 
     public Booking(String bookingId, Track track, String idUser, LocalDate date, LocalTime startHour, LocalTime endHour,
-            String status) {
+            double lat, double lng, String status) {
         this.bookingId = bookingId;
         this.track = track;
         this.idUser = idUser;

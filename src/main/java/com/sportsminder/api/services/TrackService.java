@@ -1,4 +1,5 @@
 package com.sportsminder.api.services;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ public class TrackService {
 
     @Autowired
     private TrackRepository trackRepository;
-    
+
     public List<Track> getAllTracks() {
         return trackRepository.findAll();
     }
@@ -28,17 +29,19 @@ public class TrackService {
     public void deleteTrack(Long id) {
         trackRepository.deleteById(id);
     }
-    
+
     public Track updateTrack(Long id, Track updatedTrack) {
         Track existingTrack = trackRepository.findById(id).orElse(null);
         if (existingTrack == null) {
             return null;
         }
-        
+
         existingTrack.setName(updatedTrack.getName());
         existingTrack.setSport(updatedTrack.getSport());
         existingTrack.setType(updatedTrack.getType());
-        
+        existingTrack.setLat(updatedTrack.getLat());
+        existingTrack.setLng(updatedTrack.getLng());
+
         return trackRepository.save(existingTrack);
     }
 }

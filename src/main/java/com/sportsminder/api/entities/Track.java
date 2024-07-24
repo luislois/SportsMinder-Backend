@@ -48,15 +48,24 @@ public class Track {
     @Column(name = "track_end_time")
     private String endHour;
 
+    @Column(name = "lat")
+    private Double lat;
+
+    @Column(name = "lng")
+    private Double lng;
+
     @JsonIgnore
     @OneToMany(mappedBy = "track", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
-    public Track(String name, String sport, String type, String startHour, String endHour) {
+    public Track(String name, String sport, String type, String startHour, String endHour, Double lat, Double lng) {
         this.name = name;
         this.sport = sport;
         this.type = type;
         this.startHour = startHour;
         this.endHour = endHour;
+        this.lat = lat;
+        this.lng = lng;
+
     }
 }
