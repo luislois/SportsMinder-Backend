@@ -54,11 +54,15 @@ public class Track {
     @Column(name = "lng")
     private Double lng;
 
+    @Column(name = "price")
+    private Float price;
+
     @JsonIgnore
     @OneToMany(mappedBy = "track", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
-    public Track(String name, String sport, String type, String startHour, String endHour, Double lat, Double lng) {
+    public Track(String name, String sport, String type, String startHour, String endHour, Double lat, Double lng,
+            Float price) {
         this.name = name;
         this.sport = sport;
         this.type = type;
@@ -66,6 +70,7 @@ public class Track {
         this.endHour = endHour;
         this.lat = lat;
         this.lng = lng;
+        this.price = price;
 
     }
 }

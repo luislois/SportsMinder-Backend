@@ -41,6 +41,7 @@ public class TrackService {
         existingTrack.setType(updatedTrack.getType());
         existingTrack.setLat(updatedTrack.getLat());
         existingTrack.setLng(updatedTrack.getLng());
+        existingTrack.setPrice(updatedTrack.getPrice());
 
         return trackRepository.save(existingTrack);
     }
