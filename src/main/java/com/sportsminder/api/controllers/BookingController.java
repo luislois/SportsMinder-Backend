@@ -31,6 +31,14 @@ public class BookingController {
         return new ResponseEntity<>(bookings, bookings.isEmpty() ? HttpStatus.NOT_FOUND : HttpStatus.OK);
     }
 
+    @GetMapping("/track/{trackId}/{startDate}/{endDate}/count")
+    public int getAllBookingsFromDateToDate(
+            @PathVariable long trackId,
+            @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
+            @PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
+        return bookingService.getCountByBookingsByTrackAndDateToDate(trackId, startDate, endDate);
+    }
+
     @GetMapping("/{bookingId}")
     public ResponseEntity<Booking> getBookingById(@PathVariable String bookingId) {
         Booking booking = bookingService.getBookingById(bookingId);
@@ -63,6 +71,11 @@ public class BookingController {
         }
 
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/track/{idTrack}/count")
+    public int getCountBookingsByTrackId(@PathVariable Long idTrack) {
+        return bookingService.getCountOfBookingsByTrack(idTrack);
     }
 
     @PostMapping

@@ -14,18 +14,22 @@ import com.sportsminder.api.entities.Track;
 
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, String> {
-	
-	List<Booking> findByDateAndStartHour(LocalDate date, LocalTime startHour);
-	
-	List<Booking> findByDate(LocalDate date);
-	
-	List<Booking> findByidUser(String idUser);
-	
-	List<Booking> findByTrack(Track track);
-	
-	List<Booking> findByTrackIdAndDate(Long idTrack, LocalDate date);
-	
-	@Modifying
-	@Query("delete from Booking t where t.id = ?1")
-	void deleteById(String bookingId);
+
+    List<Booking> findAllByTrackIdAndDateBetween(long trackId, LocalDate startDate, LocalDate endDate);
+
+    List<Booking> findByDateAndStartHour(LocalDate date, LocalTime startHour);
+
+    List<Booking> findByDate(LocalDate date);
+
+    List<Booking> findByidUser(String idUser);
+
+    List<Booking> findByTrack(Track track);
+
+    List<Booking> findByTrackId(long trackId);
+
+    List<Booking> findByTrackIdAndDate(Long idTrack, LocalDate date);
+
+    @Modifying
+    @Query("delete from Booking t where t.id = ?1")
+    void deleteById(String bookingId);
 }

@@ -14,7 +14,6 @@ import com.sportsminder.api.repositories.BookingRepository;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,6 +27,11 @@ public class BookingService {
         return bookingRepository.findAll();
     }
 
+    public int getCountByBookingsByTrackAndDateToDate(long trackId, LocalDate startDate, LocalDate endDate) {
+        var bookings = bookingRepository.findAllByTrackIdAndDateBetween(trackId, startDate, endDate);
+        return bookings.size();
+    }
+
     public Booking getBookingById(String bookingId) {
         return bookingRepository.findById(bookingId).orElse(null);
     }
@@ -38,6 +42,11 @@ public class BookingService {
 
     public List<Booking> getBookingsByTrack(Track track) {
         return bookingRepository.findByTrack(track);
+    }
+
+    public int getCountOfBookingsByTrack(long trackId) {
+        var bookings = bookingRepository.findByTrackId(trackId);
+        return bookings.size();
     }
 
     public Booking saveBooking(Booking booking) {
